@@ -1,0 +1,125 @@
+/* Mauro Varea Fernández UO270734 */
+
+/* Especificidad 001 */
+body {
+   width: 100%;
+   padding: 2em;  
+   font-family: Verdana, Arial, sans-serif;
+   color: #000000;
+   background-color: #D4F1F4;
+}
+
+/* Especificidad 001 */
+header {
+   /* Arriba, lados, abajo */
+   padding: 1em 1em 2em;
+   background-color: #75E6DA;
+}
+
+
+/* BARRAS DE NAVEGACIÓN */
+/* Especifidad (0,0,2) */
+nav a{
+   padding: 1em;
+   text-decoration-line: none;
+   color: #000000;
+}
+/* Especifidad (0,1,3) */
+header nav a:hover{
+   background-color: #D4F1F4;
+}
+
+/* Especifidad (0,1,2) */
+nav a:hover{
+   background-color: #75E6DA;
+}
+
+/* LISTAS */
+/* Especificidad 001 */
+ul { 
+   list-style-type: '- '; 
+}
+
+/* Especificidad 002 */
+li::marker {
+   font-weight: bold;
+}
+
+/* Especificidad 001 */
+dt {
+   font-weight: bold;
+}
+
+/* Especificidad 001 */
+dd, li {
+   font-style: italic;
+}
+
+
+/* TABLA */
+/* Especificidad 001 */
+table {
+   border: 0.3em solid #1BA9C5;
+   text-align: center;
+   border-collapse: collapse;
+}
+
+/* Especificidad 001 */
+caption {
+   border: 0.3em solid #1BA9C5;
+   font-weight: bold;
+   font-size: 1.3em;
+}
+
+/* Especificidad 001 */
+th { 
+   /*El color de la letra lo hereda de body*/
+   background-color: #1BA9C5;
+   border: 0.05em solid #1BA9C5;   
+}
+
+/* Especificidad 001 */
+td {
+   border: 0.05em solid #1BA9C5;
+}
+
+/* TÍTULOS */
+/* Especificidad 001 */
+h1 {
+   font-size: 3em;
+}
+
+/* Especificidad 001 */
+h2 {
+   font-size: 2em;
+   margin-left: 2.5em;
+}
+
+/* Especificidad 001 */
+h3 {
+   font-size: 1.5em;
+   margin-left: 1.5em;
+}
+
+/* Especificidad 001 */
+h4 {
+   font-size: 1.1em;
+   margin-left: 1em;
+}
+
+@media all and (max-width: 500px) {
+   /* Especificidad 001 */
+   h2 {
+      margin-left: 0em;
+   }
+
+   /* Especificidad 001 */
+   h3 {
+      margin-left: 0em;
+   }
+
+   /* Especificidad 001 */
+   h3 {
+      margin-left: 0em;
+   }
+}
