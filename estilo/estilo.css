@@ -1,8 +1,7 @@
 /* Mauro Varea Fernández UO270734 */
 
 /* Especificidad 001 */
-body {
-   width: 100%;
+body {  
    padding: 2em;  
    font-family: Verdana, Arial, sans-serif;
    color: #000000;
