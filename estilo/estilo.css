@@ -33,6 +33,7 @@ nav a:hover{
    background-color: #75E6DA;
 }
 
+
 /* LISTAS */
 /* Especificidad 001 */
 ul { 
@@ -50,7 +51,7 @@ dt {
 }
 
 /* Especificidad 001 */
-dd, li {
+li {
    font-style: italic;
 }
 
@@ -102,7 +103,7 @@ h3 {
 
 /* Especificidad 001 */
 h4 {
-   font-size: 1.1em;
+   font-size: 1.2em;
    margin-left: 1em;
 }
 
