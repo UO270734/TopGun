@@ -9,6 +9,11 @@ header{
     flex-wrap: wrap;
 }
 
+/* Especificidad 001 */
+aside {
+  text-align: center;
+}
+
 @media all and (max-width: 500px) {
     /* Especificidad 001 */
     header {

@@ -60,7 +60,6 @@ li {
 /* Especificidad 001 */
 table {
    border: 0.3em solid #1BA9C5;
-   text-align: center;
    border-collapse: collapse;
 }
 
