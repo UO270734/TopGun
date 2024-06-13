@@ -1,40 +1,66 @@
 /* Mauro Varea Fernández UO270734 */
 
 /* Especificidad 001 */
-header{
-    grid-area: header;
-    display: flex; 
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+header {
+	display: flex; 
+	justify-content: space-around;
+	align-items: flex-start;
+	flex-wrap: wrap;
 }
 
 /* Especificidad 001 */
-aside {
-  text-align: center;
+nav {
+	display: flex; 
+	flex-wrap: wrap;
+}
+
+/* Especificidad 001 */
+video {
+	max-width: 90%;
+}
+
+@media all and (min-width: 800px) {
+	/* Especificidad 001 */
+	body {
+		display: grid;
+		grid-template-areas: 
+		'header header header header header'
+		'main main main main aside'
+		'footer footer footer footer footer';
+	}
+
+	/* Especificidad 001 */
+	header {
+		grid-area: header;
+	}
+
+	/* Especificidad 001 */
+	main{
+		grid-area: main;
+	}
+	
+	/* Especificidad 001 */
+	aside {
+		grid-area: aside;
+	}
+	
+	/* Especificidad 001 */
+	footer{
+		grid-area: footer;
+	}
 }
 
 @media all and (max-width: 500px) {
     /* Especificidad 001 */
     header {
-      flex-direction: column;
-      padding: 1em;
+		flex-direction: column;
+		flex-wrap: nowrap;
     }
 
     /* Especificidad 001 */
     nav {
-      padding: 0em;
-      flex-direction: column;
+		flex-direction: column;
+		flex-wrap: nowrap;
     }
 
-    /* Especificidad 002 */
-    nav a{
-      padding: 1em;
-    }
-
-    /* Especificidad 001 */
-    h1 {
-      font-size: 2em;
-    }
-
-  }
+}
