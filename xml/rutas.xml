@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rutas SYSTEM "rutas.dtd">
+<rutas>
+    <ruta>
+        <nombre>Triángulo de oro</nombre>
+        <tipo>Arquitectura y monumentos</tipo>
+        <transporte>Autobús</transporte>
+        <duracion>6 días</duracion>
+        <agencia>ConoceIndia</agencia>
+        <descripcion>La ruta turística más importante de la India. Visita en autobús los puntos imprescindibles de la India.</descripcion>
+        <personasAdecuadas>Todas las edades</personasAdecuadas>
+        <lugarInicio>Aeropuerto de Delhi</lugarInicio>
+        <direccionInicio>No.367, Badam Singh Market NH-8, near shiv murti, Rangpuri, New Delhi, Delhi 110037, India</direccionInicio>            
+        <coordenadas>
+            <longitud>77.100281</longitud>
+            <latitud>28.556160</latitud>            
+            <altitud>223</altitud>
+        </coordenadas>
+        <referencia>Referencia 1: https://es.wikipedia.org/wiki/Tri%C3%A1ngulo_de_oro_(India)</referencia>
+        <referencia>Referencia 2: https://www.civitatis.com/es/delhi/circuito-7-dias-triangulo-oro</referencia>
+        <referencia>Referencia 3: https://laindiaincreible.com/tours-india/triangulo-dorado-india/</referencia>
+        <recomendacion>9</recomendacion>
+        <hito>
+            <nombre>Tumba de Humayun</nombre>
+            <descripcion>La tumba de Humayun es un complejo de edificios de arquitectura mogol en la ciudad india de Delhi.</descripcion>
+            <coordenadas>
+                <longitud>77.250602</longitud>
+                <latitud>28.593264</latitud>                
+                <altitud>217</altitud>
+            </coordenadas>
+            <distanciaAnterior unidades="km">15.22</distanciaAnterior>
+            <foto>Tumba de Humayun: india_tumba_humayun.jpg</foto>
+        </hito>
+        <hito>
+            <nombre>Taj Mahal</nombre>
+            <descripcion>El Taj Mahal es un monumento funerario construido entre 1632 y 1654 en la ciudad de Agra 
+            por el emperador musulmán Shah Jahan de la dinastía mogol. Es considerado el más bello ejemplo de palacio, 
+            estilo que combina elementos de las arquitecturas islámica, persa, india e incluso turca.</descripcion>
+            <coordenadas>
+                <longitud>78.042222</longitud>
+                <latitud>27.174167</latitud>                
+                <altitud>163</altitud>
+            </coordenadas>
+            <distanciaAnterior unidades="km">175.83</distanciaAnterior>
+            <foto>Taj Mahal: india_taj_mahal.jpeg</foto>
+            <video>Taj Mahal: india_taj_mahal.mp4</video>
+        </hito>
+        <hito>
+            <nombre>Mezquita de Jama, Fatehpur Sikri</nombre>
+            <descripcion>La mezquita de Jama es una mezquita congregacional del siglo XVI, sirvió como un precedente 
+            importante en la arquitectura mogol posterior. Alberga la tumba de Salim Chishti, el santo en cuyo honor 
+            fue construida.</descripcion>
+            <coordenadas>
+                <longitud>77.662778</longitud>
+                <latitud>27.095</latitud>                
+                <altitud>216</altitud>
+            </coordenadas>
+            <distanciaAnterior unidades="km">38.6</distanciaAnterior>
+            <foto>Mezquita de Jama: india_mezquita_jama.jpg</foto>
+        </hito>
+        <hito>
+            <nombre>Hawa Mahal</nombre>
+            <descripcion>El Hawa Mahal (en español: 'Palacio de los vientos') es un palacio de la ciudad de Jaipur en la India.
+            Servía como extensión de la zenana o cámara de las mujeres destinada al harén. La función original del edificio era 
+            la de permitir a las mujeres reales observar la vida cotidiana de las calles de la ciudad sin ser vistas.</descripcion>
+            <coordenadas>
+                <longitud>75.82672</longitud>
+                <latitud>26.924</latitud>                
+                <altitud>443</altitud>
+            </coordenadas>
+            <distanciaAnterior unidades="km">182.86</distanciaAnterior>
+            <foto>Hawa Mahal: india_hawa_mahal.jpg</foto>
+        </hito>
+    </ruta>
+    <ruta>
+        <nombre>Cuevas de Badami</nombre>
+        <tipo>Espeleología</tipo>
+        <transporte>A pie</transporte>
+        <duracion>2 horas</duracion>
+        <agencia>Sin agencia</agencia>
+        <descripcion>Sendero que cubre las 4 principales cuevas de Badami, siendo estas patrimonio de la UNESCO. Sus tallas y esculturas datan del siglo VI.</descripcion>
+        <personasAdecuadas>No recomendable para claustrofóbicos</personasAdecuadas>
+        <lugarInicio>Aparcamiento de las cuevas de Badami</lugarInicio>
+        <direccionInicio>WM9M+9GV, Badami Slums, Badami, Karnataka 587201, India</direccionInicio>            
+        <coordenadas>
+            <longitud>75.6840557</longitud>
+            <latitud>15.9185856</latitud>            
+            <altitud>576</altitud>
+        </coordenadas>
+        <referencia>Referencia 1: https://es.wikiloc.com/rutas-a-pie/badami-sightseeing-27765811</referencia>
+        <referencia>Referencia 2: https://en.wikipedia.org/wiki/Badami_cave_temples</referencia>
+        <referencia>Referencia 3: https://www.hisour.com/es/badami-cave-temples-27696/</referencia>
+        <recomendacion>8</recomendacion>
+        <hito>
+            <nombre>Cueva 1</nombre>
+            <descripcion>La cueva 1 se encuentra en la parte noroeste de la colina. 
+            El acceso se realiza a través una escalera con tallas de "ganas" enanas en diferentes posturas como si sujetaran el suelo de la cueva. 
+            La galería tiene cinco columnas esculpidas con relieves de guirnaldas de flores, follaje y joyas.</descripcion>
+            <coordenadas>
+                <longitud>75.68382516707194</longitud> 
+                <latitud>15.918278164024052</latitud>                
+                <altitud>580</altitud>
+            </coordenadas>
+            <distanciaAnterior unidades="m">26.35</distanciaAnterior>
+            <foto>Entrada a la cueva 1: india_badami_cueva1.jpg</foto>
+        </hito>
+        <hito>
+            <nombre>Cueva 2</nombre>
+            <descripcion>La cueva 2 fue creada a finales del siglo VI o principios del VII. Es más pequeña que la Cueva 1 y está dedicada principalmente a Vishnu. 
+            Se accede subiendo 64 escalones desde la primera cueva. La entrada está dividida por cuatro pilares cuadrados, tallados decorativamente con frisos
+            de "ganas" con diversas expresiones faciales. A ambos lados de la entrada hay "dvarapalas" que sostienen flores. 
+            Al igual que la Cueva 1, el arte de la Cueva 2 refleja la teología y las artes hindúes.</descripcion>
+            <coordenadas>
+                <longitud>75.68458860340502</longitud>
+                <latitud>15.918259009540542</latitud>                
+                <altitud>605</altitud>
+            </coordenadas>
+            <distanciaAnterior unidades="m">72.32</distanciaAnterior>
+            <foto>Talla cueva 2: india_badami_cueva2.jpg</foto>
+        </hito>
+        <hito>
+            <nombre>Cueva 3</nombre>
+            <descripcion>La cueva 3 es el templo hindú más antiguo de la región de Deccan. Está dedicado a Vishnu y es la cueva más grande del complejo. 
+                Tiene frisos intrincadamente tallados y figuras gigantes de Trivikrama, Anantasayana, Vasudeva, Varaha, Harihara y Narasimha. 
+                El tema principal de la Cueva 3 es Vaishnavita, aunque también muestra a Harihara en su pared sur: la mitad Vishnu y la mitad Shiva se 
+                muestran fusionadas como una sola, lo que hace que la cueva sea importante para los estudios del Shaivismo.</descripcion>
+            <coordenadas>
+                <longitud>75.68507712175435</longitud>
+                <latitud>15.91829897179927</latitud>                
+                <altitud>610</altitud>
+            </coordenadas>
+            <distanciaAnterior unidades="m">40.28</distanciaAnterior>
+            <foto>Talla cueva 3: india_badami_cueva3.jpg</foto>
+        </hito>
+        <hito>
+            <nombre>Cueva 4</nombre>
+            <descripcion>La cueva 4 se ubica al este de la cueva 3, siendo la más pequeña de las cuatro. Está dedicada a las Tirthankaras, 
+                las figuras veneradas del Jainismo. Fue construido después de las otras tres cuevas, patrocinada por reyes hindúes a finales del siglo VII. 
+                Es probable que se le agregaran adornos en siglos posteriores hasta el siglo XI o XII, aproximadamente.</descripcion>
+            <coordenadas>
+                <longitud>75.6852626986023</longitud>
+                <latitud>15.91817771575732</latitud>                
+                <altitud>617</altitud>
+            </coordenadas>
+            <distanciaAnterior unidades="m">35.76</distanciaAnterior>
+            <foto>Talla cueva 4: india_badami_cueva4.jpg</foto>
+        </hito>
+    </ruta>
+    <ruta>
+        <nombre>Etapa Chandigarh-Solan</nombre>
+        <tipo>Cicloturismo</tipo>
+        <transporte>Bicicleta</transporte>
+        <duracion>6 horas</duracion>
+        <agencia>Sin agencia</agencia>
+        <descripcion>La ruta comienza en Chandigarh y termina en Solan, atravesando los estados de Himachal Pradesh y el Ladakh, en Jammu y Kashmir.
+            Transcurre por diversos puertos de montaña, en los que se advierte de malas condiciones del terreno y asfalto.
+            Se recomienda equipaje reducido con lo básico para alimentación, higiene y muda de ropa; para aligerar peso.
+        </descripcion>
+        <personasAdecuadas>Personas en buena forma física</personasAdecuadas>
+        <lugarInicio>Hotel KC Residency, Chandigarh, India</lugarInicio>
+        <direccionInicio>377-380, Himalaya Marg, 35C, Sector 35, Chandigarh, 160022, India</direccionInicio>            
+        <coordenadas>
+            <longitud>76.76287611980975</longitud>
+            <latitud>30.723466915637356</latitud>            
+            <altitud>337</altitud>
+        </coordenadas>
+        <referencia>Referencia 1: https://es.wikiloc.com/rutas-cicloturismo/chandigarh-leh-etapa-1-chandigarh-solan-23-jun-2013-4908464</referencia>
+        <referencia>Referencia 2: </referencia>
+        <referencia>Referencia 3: </referencia>
+        <recomendacion>6</recomendacion>
+        <hito>
+            <nombre>Pinjore</nombre>
+            <descripcion>La primera ciudad por la que pasa la ruta tras la salida de Chandigarh es Pinjore, aunque se atraviesan varios pueblos previamente.
+                No es necesario adentrarse puesto que la carretera bordea la ciudad pero puede hacerse, si así se desea.</descripcion>
+            <coordenadas>
+                <longitud>76.91610715555137</longitud>
+                <latitud>30.789683149988637</latitud>                
+                <altitud>516</altitud>
+            </coordenadas>
+            <distanciaAnterior unidades="km">23.5</distanciaAnterior>
+            <foto>Templo a la entrada de la ciudad de Pinjore: india_bici_pinjore.jpg</foto>
+        </hito>
+        <hito>
+            <nombre>Dharampur</nombre>
+            <descripcion>El siguiente gran núcleo poblacional es Dharampur. Ubicado en las montañas con preciosas vistas de la naturaleza.
+                La carretera a seguir atraviesa por el medio. Se recomienda hacer una parada en cualquiera de los muchos cafés o alojamientos.
+            </descripcion>
+            <coordenadas>
+                <longitud>77.02447854106485</longitud>
+                <latitud>30.89993729722322</latitud>                
+                <altitud>1484</altitud>
+            </coordenadas>
+            <distanciaAnterior unidades="km">29</distanciaAnterior>
+            <foto>Estación de tren de Dharampur: india_bici_dharampur.jpeg</foto>
+        </hito>
+        <hito>
+            <nombre>Solan</nombre>
+            <descripcion>Final de la ruta. La ciudad de Solan, ubicada en las montañas, supone la meta de la ruta.
+                Concretamente, se termina en el Hotel Grand Paragon Palace de Solan.</descripcion>
+            <coordenadas>
+                <longitud>77.09447323095674</longitud>
+                <latitud>30.908534703272288</latitud>                
+                <altitud>1516</altitud>
+            </coordenadas>
+            <distanciaAnterior unidades="km">18</distanciaAnterior>
+            <foto>Hotel Grand Paragon Palace Solan: india_bici_solan.jpeg</foto>
+        </hito>
+    </ruta>
+</rutas>
