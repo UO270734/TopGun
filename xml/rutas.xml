@@ -2,74 +2,57 @@
 <!DOCTYPE rutas SYSTEM "rutas.dtd">
 <rutas>
     <ruta>
-        <nombre>Triángulo de oro</nombre>
-        <tipo>Arquitectura y monumentos</tipo>
-        <transporte>Autobús</transporte>
-        <duracion>6 días</duracion>
-        <agencia>ConoceIndia</agencia>
-        <descripcion>La ruta turística más importante de la India. Visita en autobús los puntos imprescindibles de la India.</descripcion>
+        <nombre>Ruta del Agua de Chelva</nombre>
+        <tipo>Paisajística</tipo>
+        <transporte>A pie</transporte>
+        <duracion>2 horas</duracion>
+        <agencia>Sin agencia</agencia>
+        <descripcion>La Ruta del Agua combina naturaleza y cultura en un agradable paseo de aproximadamente dos horas de duración con áreas de descanso, ideal para un público familiar.</descripcion>
         <personasAdecuadas>Todas las edades</personasAdecuadas>
-        <lugarInicio>Aeropuerto de Delhi</lugarInicio>
-        <direccionInicio>No.367, Badam Singh Market NH-8, near shiv murti, Rangpuri, New Delhi, Delhi 110037, India</direccionInicio>            
+        <lugarInicio>Plaza mayor de Chelva</lugarInicio>
+        <direccionInicio>Pl. Mayor, 46176 Chelva, Valencia</direccionInicio>            
         <coordenadas>
-            <longitud>77.100281</longitud>
-            <latitud>28.556160</latitud>            
-            <altitud>223</altitud>
+            <longitud>39.747469</longitud>
+            <latitud>-0.997671</latitud>            
+            <altitud>482</altitud>
         </coordenadas>
-        <referencia>Referencia 1: https://es.wikipedia.org/wiki/Tri%C3%A1ngulo_de_oro_(India)</referencia>
-        <referencia>Referencia 2: https://www.civitatis.com/es/delhi/circuito-7-dias-triangulo-oro</referencia>
-        <referencia>Referencia 3: https://laindiaincreible.com/tours-india/triangulo-dorado-india/</referencia>
-        <recomendacion>9</recomendacion>
-        <hito>
-            <nombre>Tumba de Humayun</nombre>
-            <descripcion>La tumba de Humayun es un complejo de edificios de arquitectura mogol en la ciudad india de Delhi.</descripcion>
+        <referencia>https://www.chelva.es/page/ruta-del-agua</referencia>
+        <referencia>https://www.turismochelva.es/quehacer/ruta-del-agua/</referencia>
+        <referencia>https://es.wikiloc.com/rutas-senderismo/ruta-del-agua-de-chelva-la-playeta-tuneles-y-presa-de-olinches-fabrica-de-la-luz-54593042</referencia>
+        <recomendacion>8</recomendacion>
+		<hito>
+            <nombre>Molino Puerto</nombre>
+            <descripcion>Área recreativa por la que se debe pasar 2 veces, una a la ida y otra a la vuelta. Cuenta con un parking por si se desea dejar el coche en él.</descripcion>
             <coordenadas>
-                <longitud>77.250602</longitud>
-                <latitud>28.593264</latitud>                
-                <altitud>217</altitud>
+                <longitud>39.746117</longitud>
+                <latitud>-1.005798</latitud>                
+                <altitud>411</altitud>
             </coordenadas>
-            <distanciaAnterior unidades="km">15.22</distanciaAnterior>
-            <foto>Tumba de Humayun: india_tumba_humayun.jpg</foto>
+            <distanciaAnterior unidades="km">1</distanciaAnterior>
+            <foto>molino_puerto.jpg</foto>
         </hito>
         <hito>
-            <nombre>Taj Mahal</nombre>
-            <descripcion>El Taj Mahal es un monumento funerario construido entre 1632 y 1654 en la ciudad de Agra 
-            por el emperador musulmán Shah Jahan de la dinastía mogol. Es considerado el más bello ejemplo de palacio, 
-            estilo que combina elementos de las arquitecturas islámica, persa, india e incluso turca.</descripcion>
+            <nombre>La Playeta</nombre>
+            <descripcion>La Playeta es un paraje singular del río de Chelva, cuyas cascadas y remanso se convierten en una zona tradicional de baño que recibe su nombre de la arena de arrastre acumulada en la orilla.</descripcion>
             <coordenadas>
-                <longitud>78.042222</longitud>
-                <latitud>27.174167</latitud>                
-                <altitud>163</altitud>
+                <longitud>39.747452</longitud>
+                <latitud>-1.009430</latitud>                
+                <altitud>434</altitud>
             </coordenadas>
-            <distanciaAnterior unidades="km">175.83</distanciaAnterior>
-            <foto>Taj Mahal: india_taj_mahal.jpeg</foto>
-            <video>Taj Mahal: india_taj_mahal.mp4</video>
+            <distanciaAnterior unidades="km">0.65</distanciaAnterior>
+            <foto>la_playeta.jpg</foto>
         </hito>
         <hito>
-            <nombre>Mezquita de Jama, Fatehpur Sikri</nombre>
-            <descripcion>La mezquita de Jama es una mezquita congregacional del siglo XVI, sirvió como un precedente 
-            importante en la arquitectura mogol posterior. Alberga la tumba de Salim Chishti, el santo en cuyo honor 
-            fue construida.</descripcion>
+            <nombre>Antigua presa de Olinches</nombre>
+            <descripcion>En la antigua presa de Olinches se encuentra un área de descanso desde la que se pueden ver las compuertas que regulavan el caudal del río.</descripcion>
             <coordenadas>
-                <longitud>77.662778</longitud>
-                <latitud>27.095</latitud>                
-                <altitud>216</altitud>
+                <longitud>39.745381</longitud>
+                <latitud>-1.014719</latitud>                
+                <altitud>604</altitud>
             </coordenadas>
-            <distanciaAnterior unidades="km">38.6</distanciaAnterior>
-            <foto>Mezquita de Jama: india_mezquita_jama.jpg</foto>
-        </hito>
-        <hito>
-            <nombre>Hawa Mahal</nombre>
-            <descripcion>El Hawa Mahal (en español: 'Palacio de los vientos') es un palacio de la ciudad de Jaipur en la India.
-            Servía como extensión de la zenana o cámara de las mujeres destinada al harén. La función original del edificio era 
-            la de permitir a las mujeres reales observar la vida cotidiana de las calles de la ciudad sin ser vistas.</descripcion>
-            <coordenadas>
-                <longitud>75.82672</longitud>
-                <latitud>26.924</latitud>                
-                <altitud>443</altitud>
-            </coordenadas>
-            <distanciaAnterior unidades="km">182.86</distanciaAnterior>
-            <foto>Hawa Mahal: india_hawa_mahal.jpg</foto>
+            <distanciaAnterior unidades="km">2</distanciaAnterior>
+            <foto>presa_olinches.jpg</foto>
+            <video>https://www.youtube.com/watch?v=KO46oUs5mpo</video>
         </hito>
     </ruta>
     <ruta>
