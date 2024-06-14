@@ -3,7 +3,7 @@
 <rutas>
     <ruta>
         <nombre>Ruta del Agua de Chelva</nombre>
-        <tipo>Paisajística</tipo>
+        <tipo>Senderismo</tipo>
         <transporte>A pie</transporte>
         <duracion>2 horas</duracion>
         <agencia>Sin agencia</agencia>
@@ -56,137 +56,133 @@
         </hito>
     </ruta>
     <ruta>
-        <nombre>Cuevas de Badami</nombre>
-        <tipo>Espeleología</tipo>
-        <transporte>A pie</transporte>
-        <duracion>2 horas</duracion>
+        <nombre>Ruta por Valencia</nombre>
+        <tipo>Paisajística</tipo>
+        <transporte>Coche</transporte>
+        <duracion>3 días</duracion>
         <agencia>Sin agencia</agencia>
-        <descripcion>Sendero que cubre las 4 principales cuevas de Badami, siendo estas patrimonio de la UNESCO. Sus tallas y esculturas datan del siglo VI.</descripcion>
-        <personasAdecuadas>No recomendable para claustrofóbicos</personasAdecuadas>
-        <lugarInicio>Aparcamiento de las cuevas de Badami</lugarInicio>
-        <direccionInicio>WM9M+9GV, Badami Slums, Badami, Karnataka 587201, India</direccionInicio>            
+        <descripcion>Ruta en coche por los mejores atractivos de la provincia de Valencia: Valencia, Albufera de Valencia, 
+			los Puentes colgantes de Chulilla y Bocairetn.</descripcion>
+        <personasAdecuadas>Todas las edades</personasAdecuadas>
+        <lugarInicio>Aeropuerto de Valencia</lugarInicio>
+        <direccionInicio>Carretera del Aeropuerto, s/n, 46940 Manises, Valencia</direccionInicio>            
         <coordenadas>
-            <longitud>75.6840557</longitud>
-            <latitud>15.9185856</latitud>            
-            <altitud>576</altitud>
+            <longitud>39.488605</longitud>
+            <latitud>-0.484343</latitud>            
+            <altitud>32</altitud>
         </coordenadas>
-        <referencia>Referencia 1: https://es.wikiloc.com/rutas-a-pie/badami-sightseeing-27765811</referencia>
-        <referencia>Referencia 2: https://en.wikipedia.org/wiki/Badami_cave_temples</referencia>
-        <referencia>Referencia 3: https://www.hisour.com/es/badami-cave-temples-27696/</referencia>
-        <recomendacion>8</recomendacion>
+        <referencia>https://www.viajeroscallejeros.com/rutas-comunidad-valenciana/</referencia>
+        <referencia>https://www.viviendodeviaje.com/ruta-comunidad-valenciana/</referencia>
+        <referencia>https://www.doyouspain.com/blog/las-mejores-rutas-en-coche-por-valencia/</referencia>
+        <recomendacion>9</recomendacion>
         <hito>
-            <nombre>Cueva 1</nombre>
-            <descripcion>La cueva 1 se encuentra en la parte noroeste de la colina. 
-            El acceso se realiza a través una escalera con tallas de "ganas" enanas en diferentes posturas como si sujetaran el suelo de la cueva. 
-            La galería tiene cinco columnas esculpidas con relieves de guirnaldas de flores, follaje y joyas.</descripcion>
+            <nombre>Ciudad de las Artes y las Ciencias</nombre>
+            <descripcion>La Ciudad de las Artes y las Ciencias es un complejo arquitectónico, cultural y de entretenimiento de la ciudad de Valencia.
+				El complejo, de estilo neofuturista, fue diseñado por Santiago Calatrava y Félix Candela. Fue inaugurado el 9 de junio de 1998 
+				con la apertura de El Hemisférico.</descripcion>
             <coordenadas>
-                <longitud>75.68382516707194</longitud> 
-                <latitud>15.918278164024052</latitud>                
-                <altitud>580</altitud>
+                <longitud>39.455241</longitud> 
+                <latitud>-0.350600</latitud>                
+                <altitud>14</altitud>
             </coordenadas>
-            <distanciaAnterior unidades="m">26.35</distanciaAnterior>
-            <foto>Entrada a la cueva 1: india_badami_cueva1.jpg</foto>
+            <distanciaAnterior unidades="km">19</distanciaAnterior>
+            <foto>ciudad_artes_ciencias.jpg</foto>
         </hito>
         <hito>
-            <nombre>Cueva 2</nombre>
-            <descripcion>La cueva 2 fue creada a finales del siglo VI o principios del VII. Es más pequeña que la Cueva 1 y está dedicada principalmente a Vishnu. 
-            Se accede subiendo 64 escalones desde la primera cueva. La entrada está dividida por cuatro pilares cuadrados, tallados decorativamente con frisos
-            de "ganas" con diversas expresiones faciales. A ambos lados de la entrada hay "dvarapalas" que sostienen flores. 
-            Al igual que la Cueva 1, el arte de la Cueva 2 refleja la teología y las artes hindúes.</descripcion>
+            <nombre>Albufera de Valencia</nombre>
+            <descripcion>Laguna costera somera (profundidad media de 1 m) situada en la costa mediterránea al sur de la ciudad de Valencia. 
+				Ocupa una superficie de 23,94 km² y está rodeada de 223 km² de arrozales.</descripcion>
             <coordenadas>
-                <longitud>75.68458860340502</longitud>
-                <latitud>15.918259009540542</latitud>                
-                <altitud>605</altitud>
+                <longitud>39.333927</longitud>
+                <latitud>-0.366758</latitud>                
+                <altitud>0</altitud>
             </coordenadas>
-            <distanciaAnterior unidades="m">72.32</distanciaAnterior>
-            <foto>Talla cueva 2: india_badami_cueva2.jpg</foto>
+            <distanciaAnterior unidades="km">16.7</distanciaAnterior>
+            <foto>albufera.jpg</foto>
         </hito>
         <hito>
-            <nombre>Cueva 3</nombre>
-            <descripcion>La cueva 3 es el templo hindú más antiguo de la región de Deccan. Está dedicado a Vishnu y es la cueva más grande del complejo. 
-                Tiene frisos intrincadamente tallados y figuras gigantes de Trivikrama, Anantasayana, Vasudeva, Varaha, Harihara y Narasimha. 
-                El tema principal de la Cueva 3 es Vaishnavita, aunque también muestra a Harihara en su pared sur: la mitad Vishnu y la mitad Shiva se 
-                muestran fusionadas como una sola, lo que hace que la cueva sea importante para los estudios del Shaivismo.</descripcion>
+            <nombre>Puentes Colgantes de Chulilla</nombre>
+            <descripcion>Los Puentes Colgantes de Chulilla son una serie de puentes suspendidos sobre el río Turia. Forman parte de una popular ruta de 
+				senderismo que ofrece impresionantes vistas de los cañones y paisajes naturales de la región. Además, permiten a los excursionistas 
+				cruzar el río y acceder a zonas de difícil acceso, brindando una experiencia emocionante y panorámica en plena naturaleza.</descripcion>
             <coordenadas>
-                <longitud>75.68507712175435</longitud>
-                <latitud>15.91829897179927</latitud>                
-                <altitud>610</altitud>
+                <longitud>39.668860</longitud>
+                <latitud>-0.893948</latitud>                
+                <altitud>293</altitud>
             </coordenadas>
-            <distanciaAnterior unidades="m">40.28</distanciaAnterior>
-            <foto>Talla cueva 3: india_badami_cueva3.jpg</foto>
+            <distanciaAnterior unidades="km">79.3</distanciaAnterior>
+            <foto>puentes_colgantes.jpg</foto>
         </hito>
         <hito>
-            <nombre>Cueva 4</nombre>
-            <descripcion>La cueva 4 se ubica al este de la cueva 3, siendo la más pequeña de las cuatro. Está dedicada a las Tirthankaras, 
-                las figuras veneradas del Jainismo. Fue construido después de las otras tres cuevas, patrocinada por reyes hindúes a finales del siglo VII. 
-                Es probable que se le agregaran adornos en siglos posteriores hasta el siglo XI o XII, aproximadamente.</descripcion>
+            <nombre>Bocairent</nombre>
+            <descripcion>Bocairent es un municipio de la Comunidad Valenciana, España. Se sitúa en el extremo sur de la provincia de Valencia, 
+				en la comarca del Valle de Albaida. Cuenta con una población de 4115 habitantes.</descripcion>
             <coordenadas>
-                <longitud>75.6852626986023</longitud>
-                <latitud>15.91817771575732</latitud>                
-                <altitud>617</altitud>
+                <longitud>38.765480</longitud>
+                <latitud>-0.612912</latitud>                
+                <altitud>623</altitud>
             </coordenadas>
-            <distanciaAnterior unidades="m">35.76</distanciaAnterior>
-            <foto>Talla cueva 4: india_badami_cueva4.jpg</foto>
+            <distanciaAnterior unidades="km">159</distanciaAnterior>
+            <foto>bocairent.jpg</foto>
         </hito>
     </ruta>
     <ruta>
-        <nombre>Etapa Chandigarh-Solan</nombre>
-        <tipo>Cicloturismo</tipo>
-        <transporte>Bicicleta</transporte>
-        <duracion>6 horas</duracion>
+        <nombre>Ruta de los Puentes Colgantes de Chulilla</nombre>
+        <tipo>Senderismo</tipo>
+        <transporte>A pie</transporte>
+        <duracion>4 horas</duracion>
         <agencia>Sin agencia</agencia>
-        <descripcion>La ruta comienza en Chandigarh y termina en Solan, atravesando los estados de Himachal Pradesh y el Ladakh, en Jammu y Kashmir.
-            Transcurre por diversos puertos de montaña, en los que se advierte de malas condiciones del terreno y asfalto.
-            Se recomienda equipaje reducido con lo básico para alimentación, higiene y muda de ropa; para aligerar peso.
-        </descripcion>
-        <personasAdecuadas>Personas en buena forma física</personasAdecuadas>
-        <lugarInicio>Hotel KC Residency, Chandigarh, India</lugarInicio>
-        <direccionInicio>377-380, Himalaya Marg, 35C, Sector 35, Chandigarh, 160022, India</direccionInicio>            
+        <descripcion>Una de las rutas en Valencia más bonitas y espectaculares es la Ruta de los Pantaneros o Ruta de los Puentes Colgantes de Chulilla.
+			Es una excursión muy sencilla que se puede hacer con niños, de unos 9 kilómetros de longitud; la mitad si solo vamos hasta el 2º puente.			
+			Además el pueblo de Chulilla tiene muchas otras rutas y lugares con encanto para visitar, como su castillo o el Charco Azul, 
+			por lo que resulta ideal para una escapada de fin de semana.</descripcion>
+        <personasAdecuadas>Mayores de 7 años</personasAdecuadas>
+        <lugarInicio>Parking puentes colgantes</lugarInicio>
+        <direccionInicio>5, C. Proyecto 7, 1, 46160 Chulilla, Valencia</direccionInicio>            
         <coordenadas>
-            <longitud>76.76287611980975</longitud>
-            <latitud>30.723466915637356</latitud>            
-            <altitud>337</altitud>
+            <longitud>39.659689</longitud>
+            <latitud>-0.891386</latitud>            
+            <altitud>293</altitud>
         </coordenadas>
-        <referencia>Referencia 1: https://es.wikiloc.com/rutas-cicloturismo/chandigarh-leh-etapa-1-chandigarh-solan-23-jun-2013-4908464</referencia>
-        <referencia>Referencia 2: </referencia>
-        <referencia>Referencia 3: </referencia>
-        <recomendacion>6</recomendacion>
+        <referencia>https://www.linkalicante.com/ruta-pantaneros-chulilla/</referencia>
+        <referencia>https://www.comunitatvalenciana.com/es/mediterraneo-en-accion/puentes-colgantes-chulilla</referencia>
+        <referencia>https://es.wikiloc.com/rutas-senderismo/ruta-de-los-pantaneros-o-puentes-colgantes-de-chulilla-74916360</referencia>
+        <recomendacion>7</recomendacion>
         <hito>
-            <nombre>Pinjore</nombre>
-            <descripcion>La primera ciudad por la que pasa la ruta tras la salida de Chandigarh es Pinjore, aunque se atraviesan varios pueblos previamente.
-                No es necesario adentrarse puesto que la carretera bordea la ciudad pero puede hacerse, si así se desea.</descripcion>
+            <nombre>Mirador de la Carrucha</nombre>
+            <descripcion>Mirador junto al de Compuertas sobre la vertical del Charco Azul, desafiando al vacío y asomándose al cañón de Turia.</descripcion>
             <coordenadas>
-                <longitud>76.91610715555137</longitud>
-                <latitud>30.789683149988637</latitud>                
-                <altitud>516</altitud>
+                <longitud>39.665198</longitud>
+                <latitud>-0.891808</latitud>                
+                <altitud>330</altitud>
             </coordenadas>
-            <distanciaAnterior unidades="km">23.5</distanciaAnterior>
-            <foto>Templo a la entrada de la ciudad de Pinjore: india_bici_pinjore.jpg</foto>
+            <distanciaAnterior unidades="m">600</distanciaAnterior>
+            <foto>mirador_carrucha.jpg</foto>
         </hito>
         <hito>
-            <nombre>Dharampur</nombre>
-            <descripcion>El siguiente gran núcleo poblacional es Dharampur. Ubicado en las montañas con preciosas vistas de la naturaleza.
-                La carretera a seguir atraviesa por el medio. Se recomienda hacer una parada en cualquiera de los muchos cafés o alojamientos.
-            </descripcion>
-            <coordenadas>
-                <longitud>77.02447854106485</longitud>
-                <latitud>30.89993729722322</latitud>                
-                <altitud>1484</altitud>
-            </coordenadas>
-            <distanciaAnterior unidades="km">29</distanciaAnterior>
-            <foto>Estación de tren de Dharampur: india_bici_dharampur.jpeg</foto>
+            <nombre>Puente Colgante</nombre>
+            <descripcion>Los Puentes Colgantes de Chulilla son una serie de puentes suspendidos sobre el río Turia. Forman parte de una popular ruta de 
+				senderismo que ofrece impresionantes vistas de los cañones y paisajes naturales de la región. Además, permiten a los excursionistas 
+				cruzar el río y acceder a zonas de difícil acceso, brindando una experiencia emocionante y panorámica en plena naturaleza.</descripcion>
+			<coordenadas>
+				<longitud>39.668860</longitud>
+				<latitud>-0.893948</latitud>                
+				<altitud>293</altitud>
+			</coordenadas>
+			<distanciaAnterior unidades="m">900</distanciaAnterior>
+			<foto>puentes_colgantes.jpg</foto>
         </hito>
         <hito>
-            <nombre>Solan</nombre>
+            <nombre>Presa Embalse de Loriguilla</nombre>
             <descripcion>Final de la ruta. La ciudad de Solan, ubicada en las montañas, supone la meta de la ruta.
                 Concretamente, se termina en el Hotel Grand Paragon Palace de Solan.</descripcion>
             <coordenadas>
-                <longitud>77.09447323095674</longitud>
-                <latitud>30.908534703272288</latitud>                
-                <altitud>1516</altitud>
+                <longitud>39.665346</longitud>
+                <latitud>-0.913336</latitud>                
+                <altitud>288</altitud>
             </coordenadas>
-            <distanciaAnterior unidades="km">18</distanciaAnterior>
-            <foto>Hotel Grand Paragon Palace Solan: india_bici_solan.jpeg</foto>
+            <distanciaAnterior unidades="m">2700</distanciaAnterior>
+            <foto>loriguilla.jpeg</foto>
         </hito>
     </ruta>
 </rutas>
