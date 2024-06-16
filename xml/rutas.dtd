@@ -24,3 +24,7 @@
 <!ELEMENT foto (#PCDATA)>
 <!ELEMENT video (#PCDATA)>
 <!ATTLIST distanciaAnterior unidades CDATA #REQUIRED>
+<!ATTLIST rutas
+    xmlns:xsi CDATA #IMPLIED
+    xsi:schemaLocation CDATA #IMPLIED
+>
