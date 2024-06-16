@@ -44,9 +44,17 @@ async function main() {
 					return;
 				}
 				hitos.forEach((hito) => {
-					const distancia = 10 + hito.distanciaAnterior[0]._ * 50;
+					var distanciaGrande = false;
+
+					const distancia = 10 + hito.distanciaAnterior[0]._ * 200;
+					if (distancia > 1000)
+						distanciaGrande = true;
 					distanciaAcumulada += distancia;
-					distancias.push(distanciaAcumulada);
+					if (distanciaGrande) {
+						distancias.push(distanciaAcumulada/40);
+					} else {
+						distancias.push(distanciaAcumulada);
+					}					
 
 					altitudes.push(hito.coordenadas[0].altitud[0]);
 				});

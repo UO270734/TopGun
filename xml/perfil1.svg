@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" version="2.0">
-<polyline points="10,482 60,411 102.5,434 212.5,604" style="fill:white;stroke:red;stroke-width:4" />
-<text x="60" y="411" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+<polyline points="10,482 210,411 350,434 760,604" style="fill:white;stroke:red;stroke-width:4" />
+<text x="210" y="411" style="writing-mode: tb; glyph-orientation-vertical: 0;">
 Molino Puerto
 </text>
-<text x="102.5" y="434" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+<text x="350" y="434" style="writing-mode: tb; glyph-orientation-vertical: 0;">
 La Playeta
 </text>
-<text x="212.5" y="604" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+<text x="760" y="604" style="writing-mode: tb; glyph-orientation-vertical: 0;">
 Antigua presa de Olinches
 </text>
 </svg>

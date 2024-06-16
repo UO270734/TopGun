@@ -161,7 +161,7 @@
                 <latitud>-0.891808</latitud>                
                 <altitud>330</altitud>
             </coordenadas>
-            <distanciaAnterior unidades="m">600</distanciaAnterior>
+            <distanciaAnterior unidades="km">0.6</distanciaAnterior>
             <foto>mirador_carrucha.jpg</foto>
         </hito>
         <hito>
@@ -174,7 +174,7 @@
 				<latitud>-0.893948</latitud>                
 				<altitud>293</altitud>
 			</coordenadas>
-			<distanciaAnterior unidades="m">900</distanciaAnterior>
+			<distanciaAnterior unidades="km">0.9</distanciaAnterior>
 			<foto>puentes_colgantes.jpg</foto>
         </hito>
         <hito>
@@ -186,7 +186,7 @@
                 <latitud>-0.913336</latitud>                
                 <altitud>288</altitud>
             </coordenadas>
-            <distanciaAnterior unidades="m">2700</distanciaAnterior>
+            <distanciaAnterior unidades="km">2.7</distanciaAnterior>
             <foto>loriguilla.jpeg</foto>
         </hito>
 		<kml>ruta3.kml</kml>
