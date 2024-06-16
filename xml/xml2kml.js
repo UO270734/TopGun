@@ -30,22 +30,17 @@ function epilogoKML(archivo) {
 
 async function main() {
     const nombreArchivoXML = "rutas";
-    const expresionXPathRutas = "rutas.ruta";
-    const expresionXPathCoordenadas = "coordenadas.coordenada";
 
     try {
         const archivoXML = fs.readFileSync(`xml/${nombreArchivoXML}.xml`, 'utf-8');
         const parser = new xml2js.Parser();
         const arbol = await parser.parseStringPromise(archivoXML);
 
-        // Imprimir la estructura del JSON resultante
-        console.log(JSON.stringify(arbol, null, 2));
-
         // Acceder a las rutas usando la estructura del JSON
         const listaRutas = arbol.rutas.ruta;
 
         if (!Array.isArray(listaRutas)) {
-            console.error('listaRutas no es un array. Verifica la estructura del XML.');
+            console.error('listaRutas no es un array');
             return;
         }
 
@@ -66,7 +61,7 @@ async function main() {
 				// Recorrer los hitos dentro de cada ruta
 				const hitos = ruta.hito;
 				if (!Array.isArray(hitos)) {
-					console.error('hitos no es un array. Verifica la estructura del XML.');
+					console.error('hitos no es un array');
 					return;
 				}
 				
@@ -90,8 +85,6 @@ async function main() {
     } catch (error) {
         console.error(`Error procesando el archivo XML ${nombreArchivoXML}.xml: ${error}`);
     }
-
-    console.log("FIN");
 }
 
 main();
