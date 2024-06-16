@@ -25,6 +25,8 @@
 				<xs:element minOccurs="3" maxOccurs="unbounded" ref="referencia" />
 				<xs:element ref="recomendacion" />
 				<xs:element minOccurs="3" maxOccurs="unbounded" ref="hito" />
+				<xs:element ref="kml" />
+				<xs:element ref="svg" />
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
@@ -83,4 +85,6 @@
 	</xs:element>
 	<xs:element name="foto" type="xs:string" />
 	<xs:element name="video" type="xs:string" />
+	<xs:element name="kml" type="xs:string" />
+	<xs:element name="svg" type="xs:string" />
 </xs:schema>

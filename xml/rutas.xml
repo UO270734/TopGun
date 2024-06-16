@@ -55,6 +55,8 @@
             <foto>presa_olinches.jpg</foto>
             <video>https://www.youtube.com/watch?v=KO46oUs5mpo</video>
         </hito>
+		<kml>ruta1.kml</kml>
+		<svg></svg>
     </ruta>
     <ruta>
         <nombre>Ruta por Valencia</nombre>
@@ -126,6 +128,8 @@
             <distanciaAnterior unidades="km">159</distanciaAnterior>
             <foto>bocairent.jpg</foto>
         </hito>
+		<kml>ruta2.kml</kml>
+		<svg></svg>
     </ruta>
     <ruta>
         <nombre>Ruta de los Puentes Colgantes de Chulilla</nombre>
@@ -185,5 +189,7 @@
             <distanciaAnterior unidades="m">2700</distanciaAnterior>
             <foto>loriguilla.jpeg</foto>
         </hito>
+		<kml>ruta3.kml</kml>
+		<svg></svg>
     </ruta>
 </rutas>

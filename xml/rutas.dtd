@@ -1,7 +1,7 @@
 
 <!ELEMENT rutas (ruta+)>
 <!ELEMENT ruta  (nombre, tipo, transporte, fecha?, hora?, duracion, agencia, descripcion, personasAdecuadas, 
-    lugarInicio, direccionInicio, coordenadas, referencia+, recomendacion, hito+)>
+    lugarInicio, direccionInicio, coordenadas, referencia+, recomendacion, hito+, kml, svg)>
 <!ELEMENT nombre (#PCDATA)>
 <!ELEMENT tipo (#PCDATA)>
 <!ELEMENT transporte (#PCDATA)>
@@ -23,6 +23,8 @@
 <!ELEMENT distanciaAnterior (#PCDATA)>
 <!ELEMENT foto (#PCDATA)>
 <!ELEMENT video (#PCDATA)>
+<!ELEMENT kml (#PCDATA)>
+<!ELEMENT svg (#PCDATA)>
 <!ATTLIST distanciaAnterior unidades CDATA #REQUIRED>
 <!ATTLIST rutas
     xmlns:xsi CDATA #IMPLIED
