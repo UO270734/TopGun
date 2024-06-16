@@ -56,7 +56,7 @@
             <video>https://www.youtube.com/watch?v=KO46oUs5mpo</video>
         </hito>
 		<kml>ruta1.kml</kml>
-		<svg></svg>
+		<svg>perfil1.svg</svg>
     </ruta>
     <ruta>
         <nombre>Ruta por Valencia</nombre>
@@ -129,7 +129,7 @@
             <foto>bocairent.jpg</foto>
         </hito>
 		<kml>ruta2.kml</kml>
-		<svg></svg>
+		<svg>perfil2.svg</svg>
     </ruta>
     <ruta>
         <nombre>Ruta de los Puentes Colgantes de Chulilla</nombre>
@@ -190,6 +190,6 @@
             <foto>loriguilla.jpeg</foto>
         </hito>
 		<kml>ruta3.kml</kml>
-		<svg></svg>
+		<svg>perfil3.svg</svg>
     </ruta>
 </rutas>

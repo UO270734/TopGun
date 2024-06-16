@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="2.0">
+<polyline points="10,293 30010,330 75020,293 210030,288" style="fill:white;stroke:red;stroke-width:4" />
+<text x="30010" y="330" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+Mirador de la Carrucha
+</text>
+<text x="75020" y="293" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+Puente Colgante
+</text>
+<text x="210030" y="288" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+Presa Embalse de Loriguilla
+</text>
+</svg>

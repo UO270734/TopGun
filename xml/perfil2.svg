@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="2.0">
+<polyline points="10,32 960,14 1805,0 5780,293 13740,623" style="fill:white;stroke:red;stroke-width:4" />
+<text x="960" y="14" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+Ciudad de las Artes y las Ciencias
+</text>
+<text x="1805" y="0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+Albufera de Valencia
+</text>
+<text x="5780" y="293" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+Puentes Colgantes de Chulilla
+</text>
+<text x="13740" y="623" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+Bocairent
+</text>
+</svg>
