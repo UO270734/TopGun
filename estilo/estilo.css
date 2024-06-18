@@ -45,7 +45,8 @@ nav a:hover{
 /* LISTAS */
 /* Especificidad 001 */
 ul { 
-   list-style-type: '- '; 
+   list-style-type: '- ';
+   padding-inline-start: 1em; 
 }
 
 /* Especificidad 002 */
@@ -56,11 +57,6 @@ li::marker {
 /* Especificidad 001 */
 dt {
    font-weight: bold;
-}
-
-/* Especificidad 001 */
-li {
-   font-style: italic;
 }
 
 /* TABLA */
@@ -116,6 +112,12 @@ h4 {
    margin-left: 1em;
    margin-block-end: 0.5em;
 }
+
+/* Especificidad 001 */
+h5 {
+	font-size: 1.1em;
+	margin-block-end: 0.5em;
+ }
 
 @media all and (max-width: 500px) {
 	/* Especificidad 001 */

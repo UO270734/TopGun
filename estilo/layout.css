@@ -15,6 +15,11 @@ nav {
 }
 
 /* Especificidad 001 */
+img {
+	max-width: 35%;
+}
+
+/* Especificidad 001 */
 video {
 	max-width: 90%;
 }

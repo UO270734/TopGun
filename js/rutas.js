@@ -20,9 +20,9 @@ class Ruta {
     render() {
         const rutaElement = $(`
             <article>
-                <h2>${this.nombre}</h2>
+                <h3>${this.nombre}</h3>
                 <section>
-                    <h3>Detalles</h3>
+					<h4>Características</h4>
                     <p><strong>Tipo:</strong> ${this.tipo}</p>
                     <p><strong>Transporte:</strong> ${this.transporte}</p>
                     <p><strong>Duración:</strong> ${this.duracion}</p>
@@ -35,22 +35,22 @@ class Ruta {
                     <p><strong>Recomendación:</strong> ${this.recomendacion}</p>
                 </section>
                 <section>
-                    <h3>Referencias</h3>
+                    <h4>Referencias</h4>
                     <ul>
                         ${this.referencias.map(ref => `<li><a href="${ref}" target="_blank">${ref}</a></li>`).join('')}
                     </ul>
                 </section>
                 <section>
-                    <h3>Hitos</h3>
+                    <h4>Hitos</h4>
                     ${this.hitos.map(hito => `
-                        <div>
-                            <h4>${hito.nombre}</h4>
+                        <section>
+                            <h5>${hito.nombre}</h5>
                             <p>${hito.descripcion}</p>
                             <p><strong>Coordenadas:</strong> Latitud: ${hito.coordenadas.latitud}, Longitud: ${hito.coordenadas.longitud}, Altitud: ${hito.coordenadas.altitud}</p>
                             <p><strong>Distancia Anterior:</strong> ${hito.distanciaAnterior} km</p>
-                            <img src="${hito.foto}" alt="${hito.nombre}">
-                            ${hito.video ? `<video controls src="${hito.video}"></video>` : ''}
-                        </div>
+							${hito.fotos.map(foto => `<img src="multimedia/imagenes/${foto}" alt="${hito.nombre}">`).join('')}
+                            ${hito.videos.map(video => `<video controls src="multimedia/videos/${video}"></video>`).join('')}
+                        </section>
                     `).join('')}
                 </section>
             </article>
@@ -59,9 +59,10 @@ class Ruta {
     }
 }
 
-class RutasApp {
-    constructor(xmlPath) {
-        this.xmlPath = xmlPath;
+class mostrarRutas {
+    constructor() {
+        this.xmlPath = 'xml/rutas.xml';
+		this.init();
     }
 
     fetchXML() {
@@ -75,19 +76,19 @@ class RutasApp {
     parseXML(xml) {
         const rutas = [];
         $(xml).find('ruta').each(function () {
-            const nombre = $(this).find('nombre').text();
+            const nombre = $(this).find('nombre:first').text();
             const tipo = $(this).find('tipo').text();
             const transporte = $(this).find('transporte').text();
             const duracion = $(this).find('duracion').text();
             const agencia = $(this).find('agencia').text();
-            const descripcion = $(this).find('descripcion').text();
+            const descripcion = $(this).find('descripcion:first').text();
             const personasAdecuadas = $(this).find('personasAdecuadas').text();
             const lugarInicio = $(this).find('lugarInicio').text();
             const direccionInicio = $(this).find('direccionInicio').text();
             const coordenadas = {
-                latitud: $(this).find('coordenadas latitud').text(),
-                longitud: $(this).find('coordenadas longitud').text(),
-                altitud: $(this).find('coordenadas altitud').text(),
+                latitud: $(this).find('coordenadas latitud:first').text(),
+                longitud: $(this).find('coordenadas longitud:first').text(),
+                altitud: $(this).find('coordenadas altitud:first').text(),
             };
             const referencias = [];
             $(this).find('referencia').each(function () {
@@ -95,7 +96,15 @@ class RutasApp {
             });
             const recomendacion = $(this).find('recomendacion').text();
             const hitos = [];
-            $(this).find('hito').each(function () {
+			$(this).find('hito').each(function () {
+                const fotos = [];
+                $(this).find('foto').each(function () {
+                    fotos.push($(this).text());
+                });
+                const videos = [];
+                $(this).find('video').each(function () {
+                    videos.push($(this).text());
+                });
                 const hito = {
                     nombre: $(this).find('nombre').text(),
                     descripcion: $(this).find('descripcion').text(),
@@ -105,8 +114,8 @@ class RutasApp {
                         altitud: $(this).find('coordenadas altitud').text(),
                     },
                     distanciaAnterior: $(this).find('distanciaAnterior').text(),
-                    foto: $(this).find('foto').text(),
-                    video: $(this).find('video').text() || null,
+                    fotos: fotos,
+                    videos: videos,
                 };
                 hitos.push(hito);
             });
@@ -135,6 +144,5 @@ class RutasApp {
 }
 
 $(document).ready(function() {
-    const app = new RutasApp('rutas.xml');
-    app.init();
+    new mostrarRutas();
 });
