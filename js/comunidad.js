@@ -44,39 +44,39 @@ class Comunidad {
                 dias.forEach(dia => {
                     let diaHtml = '<table>';
                     diaHtml += `<caption>${dia.dt_txt.split(' ')[0]}</caption>`;
-					diaHtml += `<tbody>`
-					diaHtml += `<tr>`
-					diaHtml += `<td>Temperatura máxima</td>`
+					diaHtml += `<tbody>`;
+					diaHtml += `<tr>`;
+					diaHtml += `<td>Temperatura máxima</td>`;
 					diaHtml += `<td>${dia.main.temp_max} ºC</td>`
-					diaHtml += `<td rowspan="0"><img src="https://openweathermap.org/img/wn/${dia.weather[0].icon}@2x.png" alt="${dia.weather[0].main}"/></td>`
-					diaHtml += `</tr>`
-					diaHtml += `<tr>`
-					diaHtml += `<td>Temperatura mínima</td>`
-					diaHtml += `<td>${dia.main.temp_min}</td>`
-					diaHtml += `</tr>`
-					diaHtml += `<tr>`
-					diaHtml += `<td>Sensación térmica:</td>`
-					diaHtml += `<td>${dia.main.feels_like} ºC</td>`
-					diaHtml += `</tr>`
-					diaHtml += `<tr>`
-					diaHtml += `<td>Humedad</td>`
-					diaHtml += `<td>${dia.main.humidity} %</td>`
-					diaHtml += `</tr>`
-					diaHtml += `<tr>`
-					diaHtml += `<td>Presión atmosférica</td>`
-					diaHtml += `<td>${dia.main.pressure} hPa</td>`
-					diaHtml += `</tr>`
-					diaHtml += `<tr>`
-					diaHtml += `<td>Velocidad del viento</td>`
-					diaHtml += `<td>${dia.wind.speed} m/s</td>`
-					diaHtml += `</tr>`
+					diaHtml += `<td rowspan="0"><img src="https://openweathermap.org/img/wn/${dia.weather[0].icon}@2x.png" alt="${dia.weather[0].main}"/></td>`;
+					diaHtml += `</tr>`;
+					diaHtml += `<tr>`;
+					diaHtml += `<td>Temperatura mínima</td>`;
+					diaHtml += `<td>${dia.main.temp_min}</td>`;
+					diaHtml += `</tr>`;
+					diaHtml += `<tr>`;
+					diaHtml += `<td>Sensación térmica:</td>`;
+					diaHtml += `<td>${dia.main.feels_like} ºC</td>`;
+					diaHtml += `</tr>`;
+					diaHtml += `<tr>`;
+					diaHtml += `<td>Humedad</td>`;
+					diaHtml += `<td>${dia.main.humidity} %</td>`;
+					diaHtml += `</tr>`;
+					diaHtml += `<tr>`;
+					diaHtml += `<td>Presión atmosférica</td>`;
+					diaHtml += `<td>${dia.main.pressure} hPa</td>`;
+					diaHtml += `</tr>`;
+					diaHtml += `<tr>`;
+					diaHtml += `<td>Velocidad del viento</td>`;
+					diaHtml += `<td>${dia.wind.speed} m/s</td>`;
+					diaHtml += `</tr>`;
                     if (dia.pop !== undefined) {
-						diaHtml += `<tr>`
-						diaHtml += `<td>Probabilidad de precipitación</td>`
-						diaHtml += `<td>${(dia.pop * 100).toFixed(0)}%</td>`
-						diaHtml += `</tr>`
+						diaHtml += `<tr>`;
+						diaHtml += `<td>Probabilidad de precipitación</td>`;
+						diaHtml += `<td>${(dia.pop * 100).toFixed(0)}%</td>`;
+						diaHtml += `</tr>`;
                     }
-                    diaHtml += `</tbody>`
+                    diaHtml += `</tbody>`;
 					diaHtml += '</table>';     
 
                     $("section").append(diaHtml);

@@ -123,8 +123,8 @@ const preguntas = [
         answer: 2
     },
 	{
-        question: "¿?",
-        options: ["2015", "2016", "2017", "2018", "2019"],
+        question: "¿De qué ciudad son las previsiones meteorológicas que se muestran en la página Meteorología?",
+        options: ["Alicante", "Peñíscola", "Benidorm", "Valencia", "Castellón de la Plana"],
         answer: 3
     },
 	{
