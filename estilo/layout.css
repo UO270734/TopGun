@@ -19,6 +19,11 @@ img {
 	max-width: 35%;
 }
 
+/* Especificidad 002 */
+table img {
+	max-width: 100%;
+}
+
 /* Especificidad 001 */
 video {
 	max-width: 90%;
