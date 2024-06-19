@@ -24,28 +24,22 @@ class Juego {
         this.$quizForm.empty();
         this.questions.forEach((q, index) => {
             const $questionHeader = $('<h3>').text(`${index + 1}. ${q.question}`);
-            this.$quizForm.append($questionHeader);
-            
-            const $optionsList = $('<ul>');
-            
+            this.$quizForm.append($questionHeader);            
+            const $optionsList = $('<ul>');            
             q.options.forEach((option, i) => {
-                const $optionItem = $('<li>');
-                
+                const $optionItem = $('<li>');                
                 const $optionInput = $('<input>', {
                     type: 'radio',
                     name: `question${index}`,
                     value: i,
                     id: `question${index}_option${i}`
-                });
-                
+                });                
                 const $optionLabel = $('<label>', {
                     for: `question${index}_option${i}`
-                }).text(option);
-                
+                }).text(option);                
                 $optionItem.append($optionInput).append($optionLabel);
                 $optionsList.append($optionItem);
-            });
-            
+            });            
             this.$quizForm.append($optionsList);
         });
     }
@@ -72,7 +66,7 @@ class Juego {
 	bindEvents() {
         this.$submitButton.on('click', () => {
             if (this.allQuestionsAnswered()) {
-                this.$warning.text(''); // Limpiar advertencia si todas las preguntas están respondidas
+                this.$warning.text('');
                 this.checkAnswers();
                 this.$result.text(`Tu puntuación es: ${this.score} / 10`);
             } else {
@@ -129,8 +123,8 @@ const preguntas = [
         answer: 3
     },
 	{
-        question: "¿?",
-        options: ["2015", "2016", "2017", "2018", "2019"],
+        question: "¿Cuántas noticias se muestran en la Página principal?",
+        options: ["1", "2", "3", "4", "5"],
         answer: 4
     }
 ];
