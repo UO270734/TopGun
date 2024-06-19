@@ -1,35 +1,46 @@
-class Carousel {
+class Carrusel {
     constructor() {
-        this.images = document.querySelectorAll('ul li');
-        this.currentIndex = 0;
-        this.showImage(this.currentIndex);
-        this.previousButton = document.querySelector('button.previous');
-        this.nextButton = document.querySelector('button.next');
-        this.addEventListeners();
+        this.ruta = "multimedia/imagenes/";
+        this.indice = 0;
+        this.imagenes = [
+            "ciudad_artes_ciencias.jpg",
+            "albufera.jpg",
+            "altea.jpg",
+            "peñiscola.jpg",
+            "puentes_colgantes.jpg"
+        ];
+		this.alts = [
+            "Ciudad de las Artes y las Ciencias de Valencia",
+            "Albufera de Valencia",
+            "Altea",
+            "Peñíscola",
+            "Puentes Colgantes de Chulilla"
+        ];
     }
 
-    showImage(index) {
-        this.images.forEach((img, i) => {
-            img.classList.toggle('active', i === index);
-        });
+    anterior() {
+		console.log(this.indice)
+        if (this.indice - 1 >= 0) {
+			this.indice--;
+        } else {
+			this.indice = 4;
+        }
+        document.getElementsByTagName('img')[0].src = this.ruta + this.imagenes[this.indice];
+		document.getElementsByTagName('img')[0].alt = this.alts[this.indice];
+		document.getElementsByTagName('p')[0].innerText = this.alts[this.indice];
     }
 
-    previousImage() {
-        this.currentIndex = (this.currentIndex > 0) ? this.currentIndex - 1 : this.images.length - 1;
-        this.showImage(this.currentIndex);
+    siguiente() {
+        if (this.indice + 1 < this.imagenes.length) {
+            this.indice++;
+        } else {
+            this.indice = 0;
+        }
+        document.getElementsByTagName('img')[0].src = this.ruta + this.imagenes[this.indice];
+		document.getElementsByTagName('img')[0].alt = this.alts[this.indice];
+		document.getElementsByTagName('p')[0].innerText = this.alts[this.indice];
     }
-
-    nextImage() {
-        this.currentIndex = (this.currentIndex < this.images.length - 1) ? this.currentIndex + 1 : 0;
-        this.showImage(this.currentIndex);
-    }
-
-    addEventListeners() {
-        this.previousButton.addEventListener('click', () => this.previousImage());
-        this.nextButton.addEventListener('click', () => this.nextImage());
-    }
+    
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    new Carousel();  // Inicializa el carrusel cuando el documento está completamente cargado
-});
+var carrusel = new Carrusel();

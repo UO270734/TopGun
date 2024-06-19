@@ -120,7 +120,23 @@ h4 {
 h5 {
 	font-size: 1.1em;
 	margin-block-end: 0.5em;
- }
+}
+
+/* BOTONES */
+/* Especificidad 001 */
+button {
+	background-color: #75E6DA;
+	padding: 0.5em 0.8em;
+	text-align: center;
+	font-size: 1em;
+	border-radius: 0.5em;
+	border: 0.1em solid black;
+}
+
+/* Especificidad 011 */
+button:hover {
+	background-color: #D4F1F4;
+}
 
 @media all and (max-width: 500px) {
 	/* Especificidad 001 */
