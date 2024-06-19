@@ -6,7 +6,7 @@ class Comunidad {
         this.lonCapital = lonCapital;
 		this.poblacion = poblacion;
 
-		this.apiKey = '8fa3dabcab848bd262b8fee40ae456b5';		
+		this.apiKeyMeteo = '8fa3dabcab848bd262b8fee40ae456b5';		
 		this.apiUrlDias = 'https://api.openweathermap.org/data/2.5/forecast';
 		//this.apiUrlDias = 'https://api.openweathermap.org/data/2.5/onecall';
 		this.apiUrlActual = 'https://api.openweathermap.org/data/2.5/weather';
@@ -24,8 +24,9 @@ class Comunidad {
         return this.poblacion.toString();
     }
 
+	// Página Meteorología
 	mostrarMeteorologia() {
-        var url = `${this.apiUrlDias}?lat=${this.latCapital}&lon=${this.lonCapital}&units=metric&appid=${this.apiKey}`;
+        var url = `${this.apiUrlDias}?lat=${this.latCapital}&lon=${this.lonCapital}&units=metric&appid=${this.apiKeyMeteo}`;
 
         $('section').append("<h3>Previsión meteorológica en Valencia para los próximos 5 días</h3>");
         $.ajax({
@@ -89,15 +90,15 @@ class Comunidad {
         });
     }
 
+	// Página principal
 	mostrarMeteorologiaActual() {
-        var url = `${this.apiUrlActual}?lat=${this.latCapital}&lon=${this.lonCapital}&units=metric&appid=${this.apiKey}`;
+        var url = `${this.apiUrlActual}?lat=${this.latCapital}&lon=${this.lonCapital}&units=metric&appid=${this.apiKeyMeteo}`;
 		var section = document.getElementsByTagName("section")[1];
 		$.ajax({
             dataType: 'json',
             url: url,
             method: 'GET',
             success: function (data) {
-				console.table(data)
 				let previsionHtml = '<table>';
 				previsionHtml += `<caption>${new Date(data.dt*1000).toLocaleDateString()} - ${new Date(data.dt*1000).toLocaleTimeString()}</caption>`;
 				previsionHtml += `<tbody>`;
@@ -145,6 +146,16 @@ class Comunidad {
                 $(section).append("<p>Ha ocurrido un error al cargar la meteorología.</p>");
             }
         });
+	}
+
+	mostrarMapa() {
+		var section = document.getElementsByTagName("section")[2];
+		var apiUrlMapa = "https://api.mapbox.com/styles/v1/mapbox/streets-v12/static/";
+		var apikeyMapa = "pk.eyJ1IjoidW8yNzA3MzQiLCJhIjoiY2x4bTBmNWxvMDM3ejJoc2R6cWNidWpybSJ9.ukVmgjy0e7-v9BbmSmkaWw";
+		var zoom = 8;
+        var tamaño = "900x1280";
+		var mapImg = `${apiUrlMapa}pin-l(${this.lonCapital},${this.latCapital})/${this.lonCapital},${this.latCapital},${zoom}/${tamaño}?access_token=${apikeyMapa}`;
+        $(section).append(`<img src="${mapImg}" alt="Mapa de Comunidad Valenciana"/>`);
 	}
 	
 }
