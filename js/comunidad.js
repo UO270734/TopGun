@@ -7,8 +7,9 @@ class Comunidad {
 		this.poblacion = poblacion;
 
 		this.apiKey = '8fa3dabcab848bd262b8fee40ae456b5';		
-		this.apiUrl = 'https://api.openweathermap.org/data/2.5/forecast';
-		//this.apiUrl = 'https://api.openweathermap.org/data/2.5/onecall';
+		this.apiUrlDias = 'https://api.openweathermap.org/data/2.5/forecast';
+		//this.apiUrlDias = 'https://api.openweathermap.org/data/2.5/onecall';
+		this.apiUrlActual = 'https://api.openweathermap.org/data/2.5/weather';
     }
 
     getName() {
@@ -24,7 +25,7 @@ class Comunidad {
     }
 
 	mostrarMeteorologia() {
-        var url = `${this.apiUrl}?lat=${this.latCapital}&lon=${this.lonCapital}&units=metric&appid=${this.apiKey}`;
+        var url = `${this.apiUrlDias}?lat=${this.latCapital}&lon=${this.lonCapital}&units=metric&appid=${this.apiKey}`;
 
         $('section').append("<h3>Previsión meteorológica en Valencia para los próximos 5 días</h3>");
         $.ajax({
@@ -60,7 +61,7 @@ class Comunidad {
 					diaHtml += `</tr>`;
 					diaHtml += `<tr>`;
 					diaHtml += `<td>Humedad</td>`;
-					diaHtml += `<td>${dia.main.humidity} %</td>`;
+					diaHtml += `<td>${dia.main.humidity}%</td>`;
 					diaHtml += `</tr>`;
 					diaHtml += `<tr>`;
 					diaHtml += `<td>Presión atmosférica</td>`;
@@ -87,6 +88,64 @@ class Comunidad {
             }
         });
     }
+
+	mostrarMeteorologiaActual() {
+        var url = `${this.apiUrlActual}?lat=${this.latCapital}&lon=${this.lonCapital}&units=metric&appid=${this.apiKey}`;
+		var section = document.getElementsByTagName("section")[1];
+		$.ajax({
+            dataType: 'json',
+            url: url,
+            method: 'GET',
+            success: function (data) {
+				console.table(data)
+				let previsionHtml = '<table>';
+				previsionHtml += `<caption>${new Date(data.dt*1000).toLocaleDateString()} - ${new Date(data.dt*1000).toLocaleTimeString()}</caption>`;
+				previsionHtml += `<tbody>`;
+				previsionHtml += `<tr>`;
+				previsionHtml += `<td>Temperatura actual</td>`;
+				previsionHtml += `<td>${data.main.temp} ºC</td>`
+				previsionHtml += `<td rowspan="0"><img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="${data.weather[0].main}"/></td>`;
+				previsionHtml += `</tr>`;
+				previsionHtml += `<tr>`;
+				previsionHtml += `<td>Temperatura máxima</td>`;
+				previsionHtml += `<td>${data.main.temp_max} ºC</td>`
+				previsionHtml += `</tr>`;
+				previsionHtml += `<tr>`;
+				previsionHtml += `<td>Temperatura mínima</td>`;
+				previsionHtml += `<td>${data.main.temp_min}</td>`;
+				previsionHtml += `</tr>`;
+				previsionHtml += `<tr>`;
+				previsionHtml += `<td>Sensación térmica:</td>`;
+				previsionHtml += `<td>${data.main.feels_like} ºC</td>`;
+				previsionHtml += `</tr>`;
+				previsionHtml += `<tr>`;
+				previsionHtml += `<td>Humedad</td>`;
+				previsionHtml += `<td>${data.main.humidity}%</td>`;
+				previsionHtml += `</tr>`;
+				previsionHtml += `<tr>`;
+				previsionHtml += `<td>Presión atmosférica</td>`;
+				previsionHtml += `<td>${data.main.pressure} hPa</td>`;
+				previsionHtml += `</tr>`;
+				previsionHtml += `<tr>`;
+				previsionHtml += `<td>Velocidad del viento</td>`;
+				previsionHtml += `<td>${data.wind.speed} m/s</td>`;
+				previsionHtml += `</tr>`;
+				if (data.pop !== undefined) {
+					previsionHtml += `<tr>`;
+					previsionHtml += `<td>Probabilidad de precipitación</td>`;
+					previsionHtml += `<td>${(data.pop * 100).toFixed(0)}%</td>`;
+					previsionHtml += `</tr>`;
+				}
+				previsionHtml += `</tbody>`;
+				previsionHtml += '</table>';     
+
+				$(section).append(previsionHtml);
+            },
+            error: function() {
+                $(section).append("<p>Ha ocurrido un error al cargar la meteorología.</p>");
+            }
+        });
+	}
 	
 }
 

@@ -14,6 +14,11 @@
 	
 	<link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
 	<link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+	<script src="js/carrusel.js"></script>
+	<script src="js/comunidad.js"></script>
 </head>
 
 <body>
@@ -39,9 +44,13 @@
 			<button onclick="carrusel.anterior()">Anterior</button>
 			<button onclick="carrusel.siguiente()">Siguiente</button>
 		</section>
+		<section>
+			<h3>Meteorología actual en Valencia</h3>
+			<script>
+				comunidadValenciana.mostrarMeteorologiaActual();
+			</script>
+		</section>
 	</main>
-
-	<script src="js/carrusel.js"></script>
 
 	<footer>
 		<p>Mauro Varea Fernández - UO270734</p>
