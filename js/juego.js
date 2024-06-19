@@ -5,7 +5,7 @@ class Juego {
         this.score = 0;
         this.$main = $('main');
         this.$quizForm = $('<form></form>');
-        this.$submitButton = $('<button type="button">Enviar</button>');
+        this.$submitButton = $('<button>Enviar</button>');
         this.$result = $('<p></p>');
 		this.$warning = $('<p></p>');
         this.init();
