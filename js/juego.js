@@ -1,3 +1,4 @@
+"use strict";
 class Juego {
     constructor(preguntas) {
         this.questions = preguntas;

@@ -1,3 +1,4 @@
+"use strict";
 class Comunidad {
     constructor(nombre, capital, latCapital, lonCapital, poblacion) {
         this.nombre = nombre;
@@ -44,7 +45,7 @@ class Comunidad {
                     }                    
                 });
                 dias.forEach(dia => {
-                    let diaHtml = '<table>';
+                    var diaHtml = '<table>';
                     diaHtml += `<caption>${dia.dt_txt.split(' ')[0]}</caption>`;
 					diaHtml += `<tbody>`;
 					diaHtml += `<tr>`;
@@ -99,7 +100,7 @@ class Comunidad {
             url: url,
             method: 'GET',
             success: function (data) {
-				let previsionHtml = '<table>';
+				var previsionHtml = '<table>';
 				previsionHtml += `<caption>${new Date(data.dt*1000).toLocaleDateString()} - ${new Date(data.dt*1000).toLocaleTimeString()}</caption>`;
 				previsionHtml += `<tbody>`;
 				previsionHtml += `<tr>`;
@@ -151,12 +152,39 @@ class Comunidad {
 	mostrarMapa() {
 		var section = document.getElementsByTagName("section")[2];
 		var apiUrlMapa = "https://api.mapbox.com/styles/v1/mapbox/streets-v12/static/";
-		var apikeyMapa = "pk.eyJ1IjoidW8yNzA3MzQiLCJhIjoiY2x4bTBmNWxvMDM3ejJoc2R6cWNidWpybSJ9.ukVmgjy0e7-v9BbmSmkaWw";
+		var apiKeyMapa = "pk.eyJ1IjoidW8yNzA3MzQiLCJhIjoiY2x4bTBmNWxvMDM3ejJoc2R6cWNidWpybSJ9.ukVmgjy0e7-v9BbmSmkaWw";
 		var zoom = 8;
         var tamaño = "900x1280";
-		var mapImg = `${apiUrlMapa}pin-l(${this.lonCapital},${this.latCapital})/${this.lonCapital},${this.latCapital},${zoom}/${tamaño}?access_token=${apikeyMapa}`;
+		var mapImg = `${apiUrlMapa}pin-l(${this.lonCapital},${this.latCapital})/${this.lonCapital},${this.latCapital},${zoom}/${tamaño}?access_token=${apiKeyMapa}`;
         $(section).append(`<img src="${mapImg}" alt="Mapa de Comunidad Valenciana"/>`);
 	}
+
+	mostrarNoticias(){
+		var section = document.getElementsByTagName("section")[3];
+		var apiUrlNoticias = "https://newsapi.org/v2/everything";
+		var apiKeyNoticias = "580bfc4d12cd40e0bd59ef979697f125";
+		var cantidad = 5;
+		var url = `${apiUrlNoticias}?q=${this.nombre}&searchIn=title&language=es&pageSize=${cantidad}&apiKey=${apiKeyNoticias}`;
+        $.ajax({
+            dataType: "json",
+            url: url,
+            method: 'GET',
+            success: function (data) {
+				var ultimaActualizacion = new Date(Date.now());
+				$(section).append(`<p>Última actualización: ${ultimaActualizacion.toLocaleString("es-ES")}.</p>`);
+                var noticiaHtml = '';
+                for (var i = 0; i < data.articles.length; i++) {
+                    noticiaHtml += "<h4>" + data.articles[i].title + "</h4>";
+                    noticiaHtml += "<p>" + data.articles[i].description + "</p>";
+                    noticiaHtml += "<a href='" + data.articles[i].url + "'> Leer más </a>";
+                }
+                $(section).append(noticiaHtml);
+            },
+            error: function () {
+                $(section).append("<p>Ha ocurrido un error al cargar las noticias.</p>");
+            }
+        });
+    }
 	
 }
 

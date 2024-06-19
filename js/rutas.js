@@ -1,3 +1,4 @@
+"use strict";
 class Ruta {
     constructor(nombre, tipo, transporte, duracion, agencia, descripcion, personasAdecuadas, lugarInicio, direccionInicio, coordenadas, referencias, recomendacion, hitos, kml, svg) {
         this.nombre = nombre;

@@ -1,3 +1,4 @@
+"use strict";
 class Carrusel {
     constructor() {
         this.ruta = "multimedia/imagenes/";
