@@ -59,7 +59,7 @@ class Ruta {
     }
 }
 
-class mostrarRutas {
+class RutasParser {
     constructor() {
         this.xmlPath = 'xml/rutas.xml';
 		this.init();
@@ -127,7 +127,7 @@ class mostrarRutas {
     }
 
     renderRutas(rutas) {
-        const rutasContainer = $('#rutas-container');
+        const rutasContainer = $('main');
         rutas.forEach(ruta => {
             rutasContainer.append(ruta.render());
         });
@@ -144,5 +144,5 @@ class mostrarRutas {
 }
 
 $(document).ready(function() {
-    new mostrarRutas();
+    new RutasParser();
 });
