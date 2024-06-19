@@ -176,7 +176,7 @@ class Comunidad {
                 for (var i = 0; i < data.articles.length; i++) {
                     noticiaHtml += "<h4>" + data.articles[i].title + "</h4>";
                     noticiaHtml += "<p>" + data.articles[i].description + "</p>";
-                    noticiaHtml += "<a href='" + data.articles[i].url + "'> Leer más </a>";
+                    noticiaHtml += "<a href='" + data.articles[i].url + "'> Leer más... </a>";
                 }
                 $(section).append(noticiaHtml);
             },
