@@ -43,8 +43,61 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         session_destroy();
         header("Location: reservas.php");
         exit();
-    }
+    } elseif (isset($_POST['reservar'])) {
+        // Lógica para procesar el formulario de reservas
+        $database = new Database();
+        $db = $database->getConnection();
+
+        $id_usuario = $_SESSION['usuario_id'];
+        $fecha = $_POST['fecha'];
+        $hora = $_POST['hora'];
+        $recursos = $_POST['recursos'];
+		$totalPresupuesto = 0;
+
+        // Validar datos
+        if (!empty($recursos) && !empty($fecha) && !empty($hora)) {
+            // Insertar reserva en la base de datos
+            $queryReserva = "INSERT INTO Reservas (id_usuario, fecha_reserva, hora_inicio) VALUES (:id_usuario, :fecha, :hora)";
+            $stmtReserva = $db->prepare($queryReserva);
+            $stmtReserva->bindParam(':id_usuario', $id_usuario);
+            $stmtReserva->bindParam(':fecha', $fecha);
+            $stmtReserva->bindParam(':hora', $hora);
+
+            if ($stmtReserva->execute()) {
+                $id_reserva = $db->lastInsertId();
+
+                foreach ($recursos as $id_recurso) {
+					// Obtener el precio del recurso
+					$queryPrecio = "SELECT precio FROM Recursos WHERE id = :id_recurso";
+					$stmtPrecio = $db->prepare($queryPrecio);
+					$stmtPrecio->bindParam(':id_recurso', $id_recurso);
+					$stmtPrecio->execute();
+					$recurso = $stmtPrecio->fetch(PDO::FETCH_ASSOC);
+					$precioRecurso = $recurso['precio'];
+
+					// Sumar el precio del recurso al total del presupuesto
+					$totalPresupuesto += $precioRecurso;
+
+					// Insertar detalles de la reserva
+                    $queryDetalle = "INSERT INTO Detalles_Reserva (id_reserva, id_recurso) VALUES (:id_reserva, :id_recurso)";
+                    $stmtDetalle = $db->prepare($queryDetalle);
+                    $stmtDetalle->bindParam(':id_reserva', $id_reserva);
+                    $stmtDetalle->bindParam(':id_recurso', $id_recurso);
+                    $stmtDetalle->execute();
+                }
+
+                $mensaje = "Reserva realizada correctamente. El presupuesto total es " . number_format($totalPresupuesto, 2) . " €.";
+            } else {
+                $mensaje = "Error al realizar la reserva.";
+            }
+        } else {
+            $mensaje = "Por favor, complete todos los campos.";
+        }
+	}
 }
+$database = new Database();
+$db = $database->getConnection();
+$stmtRecursos = $database->getRecursosTuristicos();
 ?>
 
 <!DOCTYPE HTML>
@@ -88,8 +141,39 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <input type="submit" name="logout" value="Cerrar Sesión">
         </form>
         
-        <h3>Reservar</h3>
-        <!-- Aquí va el formulario para realizar reservas -->
+        <!-- Formulario para realizar reservas -->
+		<form action="reservas.php" method="post">
+            <!-- Campos para seleccionar recursos turísticos -->
+            <h3>Seleccionar Recursos Turísticos</h3>
+			<?php while ($recurso = $stmtRecursos->fetch(PDO::FETCH_ASSOC)): ?>
+                <label for="recurso<?php echo $recurso['id']; ?>">
+                    <input type="checkbox" id="recurso<?php echo $recurso['id']; ?>" name="recursos[]" value="<?php echo $recurso['id']; ?>">
+                    <?php echo $recurso['nombre']; ?> - <?php echo $recurso['descripcion']; ?> - Precio: <?php echo number_format($recurso['precio'], 2); ?> €
+                </label>
+                <br>
+            <?php endwhile; ?>
+
+            <!-- Campos para seleccionar fechas y horas -->
+            <h3>Seleccionar Fechas y Horas</h3>
+            <label for="fecha">
+                Fecha:
+                <input type="date" id="fecha" name="fecha" required>
+            </label>
+            <br>
+            <label for="hora">
+                Hora:
+                <input type="time" id="hora" name="hora" required>
+            </label>
+            <br>
+
+            <!-- Botón para enviar el formulario -->
+            <input type="submit" name="reservar" value="Reservar">
+        </form>
+
+		<!-- Mensaje de confirmación -->
+        <?php if (isset($mensaje)): ?>
+            <p><?php echo $mensaje; ?></p>
+        <?php endif; ?>
 
 		<?php else: ?>
 			<h3>Registro</h3>

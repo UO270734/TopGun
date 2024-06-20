@@ -19,5 +19,14 @@ class Database {
 
         return $this->conn;
     }
+
+	public function getRecursosTuristicos() {
+        $query = "SELECT id, nombre, descripcion, precio FROM Recursos";
+
+        $stmt = $this->conn->prepare($query);
+        $stmt->execute();
+
+        return $stmt;
+    }
 }
 ?>
